@@ -1,0 +1,350 @@
+main {
+  width: 100%;
+}
+
+.magic-massage {
+  width: 100%;
+  height: fit-content;
+  background: #fbfbfb;
+  position: relative;
+  padding: 3rem 8rem 0.5rem 8rem;
+}
+
+.magic-massage__title {
+  display: flex;
+  height: fit-content;
+  position: relative;
+}
+
+.magic-massage__title img {
+  position: absolute;
+  left: 47%;
+  top: 95%;
+}
+
+.magic-massage__title h1 {
+  color: var(--dark-blue);
+  line-height: 55px;
+}
+
+.magic-massage__title svg {
+  margin: 0 0 0 2rem;
+}
+
+.magic-massage__title span {
+  color: var(--light-blue);
+}
+
+.magic-massage__img {
+  position: absolute;
+  right: 12%;
+  top: 25%;
+}
+
+.description-container {
+  width: 45vw;
+  margin: 1.5rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.massage-desc__mob {
+  display: none;
+  font-size: 1rem;
+}
+
+.massage-features {
+  width: 100%;
+  height: 100%;
+  padding: 1.1rem 0;
+  border: 1px solid rgba(174, 204, 255, 0.5);
+  border-radius: 10px;
+  background: rgba(174, 204, 255, 0.1);
+}
+
+.massage-features__container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.massage-feature {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgba(174, 204, 255, 0.5);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.massage-feature svg {
+  margin-bottom: 0.5rem;
+}
+
+.massage-feature.pet {
+  border: none;
+}
+
+.massage-feature li {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+  color: var(--light-black);
+}
+
+.get-massage {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin-top: 1rem;
+}
+
+.get-massage button {
+  width: 23rem;
+  height: 7vh;
+  background: var(--light-blue);
+  border-radius: 60px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.get-massage button:hover {
+  background: white;
+  color: var(--light-blue);
+}
+
+.get-massage__bundle {
+  width: 14rem;
+  height: 4.5vh;
+  background: rgba(77, 145, 207, 0.15);
+  box-shadow: 0px 0px 14px white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-massage__bundle h4 {
+  color: black;
+}
+
+.get-massage__bundle span {
+  color: var(--light-blue);
+}
+
+.buyer {
+  position: absolute;
+  right: 14%;
+  bottom: 6%;
+  width: 25vw;
+  height: 11vh;
+  background: rgba(234, 242, 255, 0.1);
+  border: 1px solid rgba(174, 204, 255, 0.5);
+  border-radius: 110px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buyer p {
+  color: black;
+  font-weight: 700;
+}
+
+.buyer-img {
+  width: 64px;
+  height: 64px;
+}
+
+.buyer-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.2rem 1rem 0.2rem 0;
+}
+
+.buyer-review__rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyer-review__container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.buyer-review__container img {
+  width: 4.813rem;
+  height: 14.2px;
+}
+
+.buyer-review__container h4 {
+  color: #787979;
+}
+
+.buyer-review__verify {
+  display: flex;
+  align-items: center;
+}
+
+.buyer-review__verify h4 {
+  font-size: 0.8rem;
+  color: var(--light-blue);
+  text-transform: uppercase;
+  margin-left: 0.2rem;
+}
+
+#key-fetures {
+  width: 100%;
+  height: fit-content;
+  background: var(--dark-blue);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.key-feature__list {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.key-feature {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.key-feature__image {
+  background: white;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-feature__description {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 50rem) {
+  .magic-massage {
+    padding: 0 1rem;
+    background: #f5fdff;
+  }
+
+  .magic-massage__title {
+    margin-bottom: 3rem;
+  }
+
+  .magic-massage__title h1 {
+    text-align: left;
+    max-width: 200px;
+    line-height: 30px;
+  }
+
+  .magic-massage__title img {
+    position: absolute;
+    width: 97px;
+    height: 5px;
+    left: 17%;
+    top: 105%;
+  }
+
+  .magic-massage__title svg {
+    position: absolute;
+    margin: 0;
+    transform: scaleY(-1);
+    top: 80%;
+    left: 45%;
+  }
+
+  .magic-massage__img {
+    width: 174px;
+    height: 107px;
+    top: 0;
+    right: 5%;
+  }
+
+  .description-container {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .massage-desc__web {
+    display: none;
+  }
+
+  .massage-desc__mob {
+    display: block;
+    text-align: center;
+  }
+
+  .massage-features {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .massage-feature {
+    border: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .massage-feature ul {
+    display: none;
+  }
+
+  .get-massage {
+    margin: 0;
+  }
+
+  .get-massage button {
+    min-width: 20rem;
+  }
+
+  .key-feature__list {
+    gap: 1rem;
+  }
+
+  .key-feature {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .key-feature.star {
+    display: none;
+  }
+
+  .buyer {
+    width: fit-content;
+    position: static;
+  }
+
+  .buyer-review {
+    padding-right: 0.1rem;
+  }
+}

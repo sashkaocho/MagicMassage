@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Mont';
+  src: url(./assets/fonts/Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url(./assets/fonts/Mont-HeavyDEMO.otf);
+  font-weight: 700;
+}
+
+:root {
+  --light-blue: #197aff;
+  --sky-blue: #aeccff;
+  --dark-blue: #11346f;
+  --light-purple: #3a3075;
+  --light-white: #f6f8fc;
+  --light-black: #262626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mont';
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 49px;
+  color: var(--dark-blue);
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: var(--light-black);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: var(--dark-blue);
+}
+
+h5 {
+  font-size: 0.813rem;
+  line-height: 17px;
+  color: var(--dark-blue);
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: var(--dark-blue);
+}
+
+@media (max-width: 50rem) {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
